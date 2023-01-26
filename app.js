@@ -1,2 +1,5 @@
 "use strict";
-const skills = [1, 'Devops', 'Testing'];
+const skill = [1, 'Devops', 'Testing'];
+const skills = ['Dev', 'DevOps'];
+skills[0] = '';
+console.log(skills);

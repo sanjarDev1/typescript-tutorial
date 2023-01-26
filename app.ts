@@ -1,10 +1,6 @@
-const skills: [number, string, string] = [1, 'Devops', 'Testing'];
+const skill: readonly [number, string, string] = [1, 'Devops', 'Testing'];
 
-const [id, skillName] = skills;
+const skills: ReadonlyArray<string> = ['Dev', 'DevOps'];
+skills[0] = '';
 
-const arr: [number, string, ...boolean[]] = [1, 'dfdf', true, false];
-// const id = skills[0];
-// const skillName = skills[1];
-
-// skills.push('salom');
-// skills.pop();
+console.log(skills)
