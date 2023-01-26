@@ -1,13 +1,31 @@
-enum RequestType {
-  GET = 'get',
-  POST = 'post',
-}
+// type httpMethod = 'post' | 'get' ;
 
-function fetchWidthAuth(url: string, method: 'post' | 'get'): 1 | -1 {
-    return 1 
-}
-fetchWidthAuth('s', 'post');
+// type coolString = string;
 
-const method = 'post'
+// function fetchWidthAuth(url: string, method: httpMethod): 1 | -1 {
+//     return 1
+// }
+// fetchWidthAuth('s', 'post');
 
-fetchWidthAuth('s', method as 'post');
+// const method = 'post'
+
+// fetchWidthAuth('s', method as 'post');
+
+type User = {
+  name: string;
+  age: number;
+  skills: string[];
+};
+
+type Role = {
+  id: number;
+};
+
+type UserWithRole = User & Role;
+
+let user: UserWithRole = {
+  name: 'asdas',
+  age: 33,
+  skills: ['1', '2'],
+  id: 1,
+};
